@@ -1,0 +1,361 @@
+/*******HEADER*******/
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #8b8b8b;
+    font-family:'Courier New', Courier, monospace
+}
+
+.header__section {
+    display: flex;
+    align-items: center;
+}
+
+.header__item {
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.header__item:hover {
+    background-color: #FF9900;
+    border-radius: 4px;
+}
+
+.header__logo {
+    font-weight: bold;
+}
+
+.headerButton {
+    cursor: pointer;
+}
+
+.header__button__group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__search__group {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.form__search__input {
+    width: 100%;
+    height: 45px;/**/
+    padding: 0 0 0px 0;
+    border: 1.5px solid rgba(187, 186, 186, 0.7);
+    border-radius: 1px;
+    background-color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+
+
+/*******LOGIN FORM*******/
+.login__page__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.form__login {
+    width: 300px;
+    border: 1.5px solid rgba(175, 174, 174, 0.7);
+    padding: 32px;
+    border-radius: 1px;
+    box-shadow: 0 4px 16px #ccc;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    /*background-color: #fff;*/
+}
+
+.form__login__input,
+.form__login__button {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.form__login__title {
+    text-align: center;
+    margin: 0 0 32px 0;
+    font-weight: normal;
+}
+
+.form__login__group {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.form__login__label {
+    margin-top: 14px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    color: #9e9e9e;
+    transition: 0.3s;
+}
+
+.form__login__input {
+    width: 100%;
+    height: 45px;/**/
+    padding: 0 0 0px 0;
+    border: 1.5px solid rgba(187, 186, 186, 0.7);
+    border-radius: 1px;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form__login__input:focus {
+    border-bottom: 1px solid #1a73a8;
+}
+
+.form__login__button {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1px;
+    color: #fff;
+    background-color: #79b87c;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form__login__button:focus,
+.form__login__button:hover {
+    background-color: rgba(0, 113, 240, 0.7);
+}
+
+.form__login__input:focus ~ .form__login__label,
+.form__login__input:not(:placeholder-shown) ~ .form__login__label {
+    top: -18px;
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+
+
+/*******REGISTER FORM*******/
+.register__page__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.form__register {
+    width: 800px;
+    border: 1.5px solid rgba(175, 174, 174, 0.7);
+    padding: 32px;
+    border-radius: 1px;
+    box-shadow: 0 4px 16px #ccc;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    /*background-color: #fff;*/
+}
+
+.form__register__content {
+    display: flex;
+    justify-content: space-between;
+    /*justify-content: center;*/
+}
+
+.form__register__input,
+.form__register__button {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.form__register__title {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 0 32px 0;
+    font-weight: normal;
+    background-color: rgb(158, 158, 158);
+}
+
+.form__register__group {
+    width: 380px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.form__register__label {
+    padding-left: 10px;
+    margin-top: 14px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    color: #9e9e9e;
+    transition: 0.3s;
+}
+
+.form__register__input {
+    width: 100%;
+    height: 45px;/**/
+    padding: 0 0 0px 0;
+    border: 1.5px solid rgba(187, 186, 186, 0.7);
+    border-radius: 1px;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form__register__input:focus {
+    border-bottom: 1px solid #1a73a8;
+}
+
+.form__register__button__group {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form__register__button {
+    width: 150px;
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1px;
+    color: #fff;
+    background-color: #79b87c;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form__register__button:focus,
+.form__register__button:hover {
+    background-color: rgba(0, 113, 240, 0.7);
+}
+
+.form__register__input:focus ~ .form__register__label,
+.form__register__input:not(:placeholder-shown) ~ .form__register__label {
+    top: -18px;
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+
+
+/*******COUPON FORM*******/
+.coupon__page__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.form__coupon {
+    width: 800px;
+    border: 1.5px solid rgba(175, 174, 174, 0.7);
+    padding: 32px;
+    border-radius: 1px;
+    box-shadow: 0 4px 16px #ccc;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    /*background-color: #fff;*/
+}
+
+.form__coupon__content {
+    display: flex;
+    justify-content: space-between;
+    /*justify-content: center;*/
+}
+
+.form__coupon__input,
+.form__coupon__button {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.form__coupon__title {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 0 32px 0;
+    font-weight: normal;
+    background-color: rgb(158, 158, 158);
+}
+
+.form__coupon__group {
+    width: 380px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.form__coupon__label {
+    padding-left: 10px;
+    margin-top: 14px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    color: #9e9e9e;
+    transition: 0.3s;
+}
+
+.form__coupon__input {
+    width: 100%;
+    height: 45px;/**/
+    padding: 0 0 0px 0;
+    border: 1.5px solid rgba(187, 186, 186, 0.7);
+    border-radius: 1px;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form__coupon__input:focus {
+    border-bottom: 1px solid #1a73a8;
+}
+
+.form__coupon__button__group {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form__coupon__button {
+    width: 150px;
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1px;
+    color: #fff;
+    background-color: #79b87c;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form__coupon__button:focus,
+.form__coupon__button:hover {
+    background-color: rgba(0, 113, 240, 0.7);
+}
+
+.form__coupon__input:focus ~ .form__coupon__label,
+.form__coupon__input:not(:placeholder-shown) ~ .form__coupon__label {
+    top: -18px;
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+
+
+/*******MAIN*******/
+.main__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    /*background-color: #f1f1f1;*/
+}
